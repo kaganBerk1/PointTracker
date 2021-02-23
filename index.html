@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--    CSS     -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="icons/command.png" type="image/gif" sizes="16x16" />
+    <title>Point Tracker</title>
+  </head>
+  <body>
+    <div class="containers">
+      <label for="Header" class="header"><h1>Point Tracker</h1></label>
+      <fieldset class="form">
+        <form action="http://127.0.0.1:8080">
+          <label for="FirstName"
+            ><input type="text" id="name" placeholder="First Name"
+          /></label>
+
+          <label for="Points"
+            ><input
+              type="number"
+              id="pointValue"
+              placeholder="Enter Your Point"
+          /></label>
+
+          <button class="buttonAdd" type="button">ADD!</button>
+        </form>
+        <button type="button" class="buttonScores">HIGHSCORES</button>
+
+        <div class="points"></div>
+        <!--  MODAL  -->
+        <div class="modal">
+          <!--  MODAL CONTENT   -->
+          <h1 style="margin-left: 35%">TOP SCORES</h1>
+          <img
+            class="closeSpan"
+            src="icons/streamline-icon-close@140x140.png"
+            alt="close"
+          />
+          <div class="modal-content"></div>
+        </div>
+      </fieldset>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script src="app.js"></script>
+  </body>
+</html>

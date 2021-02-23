@@ -1,0 +1,130 @@
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.form {
+  border: none;
+  border-radius: 40px;
+  background: beige;
+  position: relative;
+  width: 650px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  justify-content: space-around;
+}
+input {
+  margin: 20px 5px 1px 10px;
+}
+.header {
+  color: #612a14;
+  position: absolute;
+  margin-left: 40px;
+  top: 5px;
+  text-transform: uppercase;
+}
+.buttonAdd {
+  width: 60px;
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  color: coral;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+input[type="text"] {
+  height: 25px;
+  border: 2px solid #e06746;
+  outline: none;
+  border-radius: 10px;
+}
+input[type="number"] {
+  height: 25px;
+  border: 2px solid #e06746;
+  outline: none;
+  border-radius: 10px;
+}
+.points {
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  margin: 100px;
+  opacity: 1;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.person {
+  opacity: 0.7;
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  display: flex;
+  width: 40%;
+  height: 35%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.buttonScores {
+  position: absolute;
+  margin: 65px;
+  border: 2px solid #edda82;
+  border-radius: 5px;
+  outline: none;
+  background-color: #e0cd7b;
+  cursor: pointer;
+  color: #615935;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 365px;
+  top: 18%;
+  border-radius: 45px;
+  width: 48%;
+  height: 57%;
+  overflow: scroll; /* Enable scroll if needed */
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+.closeSpan {
+  position: absolute;
+  width: 5%;
+  bottom: 91%;
+  left: 91%;
+  cursor: pointer;
+}
+.modal-box {
+  width: 20%;
+  height: 25%;
+  margin: 5px;
+  margin-left: 20%;
+  display: flex;
+  text-transform: uppercase;
+  z-index: inherit;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe4bf;
+  border-radius: 10px;
+  color: #807260;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
